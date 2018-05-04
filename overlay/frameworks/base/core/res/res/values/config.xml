@@ -219,4 +219,10 @@
     <!-- Should the pinner service pin the Camera application? -->
     <bool name="config_pinnerCameraApp">true</bool>
 
+    <!-- Paths to fast charging status file to detect whether an oem fast charger is active -->
+    <string-array name="config_oemFastChargerStatusPaths" translatable="false">
+        <item>/sys/class/power_supply/Battery/fcp_status</item>
+        <item>/sys/class/power_supply/Battery/scp_status</item>
+    </string-array>
+
 </resources>
